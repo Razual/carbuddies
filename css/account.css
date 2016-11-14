@@ -35,7 +35,7 @@
     }
 
 
-/* Kontaktinformationen  */
+/* Kontaktinformationen ======================================= */
 
     .user_contactinformation_cart {
         border: 1px solid lightgray;
@@ -99,6 +99,7 @@
     }
 
 
+/* Buchungsanfragen ======================================= */
 
 
     /* TITLE */
@@ -128,29 +129,43 @@
 
     /* BUTTONS */
 
-        .btn_booking {
-            background-color: #46CE46;
+        .btn_accept {
+            background-color: black;
             color: white;
             transition: background 170ms ease-in-out;
             margin-top: 30px;
             margin-bottom: 9px;
         }
 
-        .btn_booking:hover {
-            background-color:black;
+        .btn_accept:hover {
+            background-color:#46CE46;
             color: white !important;
         } 
 
 
-        .btn_notice {
-            background-color: #46CE46;
+        .btn_reject {
+            background-color: black;
             color: white;
             transition: background 170ms ease-in-out;
             margin-top: 30px;
             margin-bottom: 9px;
         }
 
-        .btn_notice:hover {
-            background-color:black;
+        .btn_reject:hover {
+            background-color:#46CE46;
             color: white !important;
         } 
+
+
+
+/* Meine gebuchten Fahrten ======================================= */
+
+
+    /* KARTE */
+    .my_booking_rides {
+        border: 1px solid #C8C8C8;
+        color: #969696;
+        padding: 20px;
+        border-left: 11px solid #46CE46 !important; 
+        margin-top: 32px;
+    }
