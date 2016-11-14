@@ -19,8 +19,8 @@
     <link href="../css/menu.css" rel="stylesheet" type="text/css">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
     
-    <!-- Home CSS -->
-    <link href="../css/home.css" rel="stylesheet" type="text/css">
+    <!-- Wishlist CSS -->
+    <link href="../css/wishlist.css" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -43,21 +43,6 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
  
-<!-- Include Date Range Picker -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
-
-<script type="text/javascript">
-    $(function() {
-        $('input[name="daterange"]').daterangepicker({
-            timePicker: true,
-            timePickerIncrement: 30,
-            locale: {
-                format: 'MM/DD/YYYY h:mm A'
-            }
-        });
-    });
-</script>
 </head>
 
     
@@ -108,90 +93,59 @@
     </nav>
     
     
-
-
     
-    <!-- HEADER --> 
+<!-- HEADER --> 
     <header class="intro-header car_buddies__header_img" id="car_buddies__search">
         <div class="container">
             <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car_buddies__search_section_title">
-                        <div class="site-heading col-lg-10 col-xs-12 col-lg-offset-1 car_buddies__search_title">
-                            <h1>Suchen Sie Ihre Fahrt </h1>
-                        </div>
-                        <div class="title_border  col-lg-5 col-xs-12"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car_buddies__search_section_title">
+                    <div class="site-heading col-lg-10 col-xs-12 col-lg-offset-2 car_buddies__search_title">
+                        <h1>Merkliste</h1>
                     </div>
-                    <div class="car_buddies__search col-lg-offset-2 col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                        <div class="col-lg-4 col-xs-12">
-                            <label>
-                                <span>VON</span>
-                                <input type="text" class="form-control" id="search_from" placeholder="z.B. Köln">
-                            </label>
-                        </div>
-                        <div class="col-lg-4 col-xs-12">
-                            <label>
-                                <span>Nach</span>
-                                <input type="text" class="form-control" id="search_toward" placeholder="z.B. Bonn">
-                            </label>
-                        </div>
-                        <div class="col-lg-4 col-xs-12">
-                            <label>
-                                <span>Zeitraum</span>
-                                <input type="text" name="daterange" id="search_daterange" placeholder="Zeitraum wählen" />
-                            </label>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
-                            <a class="btn btn_search" href="Nach Klick tauchen Suchergebnisse auf">Suchen</a>
-                        </div>
+                    <div class="title_border col-lg-5 col-xs-12">
                     </div>
                 </div>
+            </div>
         </div>
     </header>
     
     
     
     
-    
-    <!-- Main Content -->
-    <section id="car_buddies__search_result" class="car_buddies__search_result">
+<!-- Main Content -->
+    <section id="useraccount" class="useraccount">
         <div class="container-fluid">
             <div class="row">
-                <!-- Title, soll aber erst auftauchen, wenn auf bei der suche gesucht wurden ist :D Logisch -->
-                <div class="col-lg-10 col-xs-12 col-lg-offset-1 car_buddies_search_result_title" id="car_buddies_search_result_title">
-                    <h1>Suchergebnisse</h1>
-                </div>
-                
-                
-                <!-- Dieser ganze Block ist eine Fahrten-Karte und soll sich bei mehreren Suchergebnissen wiederholen -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="car_buddies_search_result_carts">
-                    <div class="col-lg-offset-2 col-lg-5 col-md-5 col-sm-12 col-xs-12 car_buddies_search_result_carts">
-                        <div class="col-lg-7 col-sm-7 col-xs-12">
-                            <h2 id="username">Username -DB</h2>
-                        </div>
-                        <div class="col-lg-5 col-sm-5 col-xs-12 mt44">
-                            <h4 id="available_seats">Verfügbare Sitzplätze: -DB</h4>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-xs-12">
-                            <h3 id="from_toward">Von  -  Nach -DB</h3>
-                            <h3 id="date">Datum -DB</h3>
-                            <h3 id="time">Uhrzeit -DB</h3>
-                        </div>
-                        <!-- BUTTONS ===========-->
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car__btn_section">
-                            <!-- ANMELDEN -->
-                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-right" id="btn_booking">
-                                <a class="btn btn_booking" href="Verlinkung zur Stratseite, wenn anmelde Daten stimmen">Buchen</a>
+                <div class="col-lg-12 col-xs-12 col-lg-offset-1 car_buddies__wishlist">
+                        <!-- NEUE Buchungsanfragen  -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="wishlist_carts">
+                            <div class="wishlist_carts_title">
+                                <h1></h1>
                             </div>
-                            <!-- NEUES KONTO  -->
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-right" id="btn_notice">
-                                <a class="btn btn_notice" href="Verlinkung zum New Account Formular">Merken</a>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wishlist_carts">
+                                <!--  -->
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <h2 id="username">Username -DB</h2>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <h4 id="from_toward">Von  -  Nach -DB</h4>
+                                    <h4 id="date">Datum -DB</h4>
+                                    <h4 id="time">Uhrzeit -DB</h4>
+                                </div>
+                                <!-- BUTTONS ===========-->
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car__btn_section">
+                                    <!-- ANMELDEN -->
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-right" id="btn_booking">
+                                        <a class="btn btn_booking" href="">Buchen</a>
+                                    </div>
+                                    <!-- NEUES KONTO  -->
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-right" id="btn_delete">
+                                        <a class="btn btn_delete" href="">Entfernen</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-                <!-- ENDE -->
-                
-                
             </div>
         </div>
     </section>

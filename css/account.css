@@ -158,11 +158,26 @@
 
 
 
+
 /* Meine gebuchten Fahrten ======================================= */
 
 
     /* KARTE */
     .my_booking_rides {
+        border: 1px solid #C8C8C8;
+        color: #969696;
+        padding: 20px;
+        border-left: 11px solid #46CE46 !important; 
+        margin-top: 32px;
+    }
+
+
+
+
+/* ARCHIV ======================================= */
+
+    /* KARTE */
+    .my_archiv {
         border: 1px solid #C8C8C8;
         color: #969696;
         padding: 20px;
