@@ -1,0 +1,153 @@
+/* CSS Datei für die Startseite */
+
+/* Header Anpassungen nur in der Startseite */
+
+/* Abstände */
+
+.mt14 {
+    margin-top: 14px!important;
+}
+
+.mt24 {
+    margin-top: 24px!important;
+}
+
+    /* Überschirft  */
+
+         .title_border {
+            border-top: 5px solid #46CE46 !important; 
+            margin-bottom: 32px;
+            margin-left: 0 !important;
+        }
+
+
+
+
+
+    /* Suchbox */
+
+        .car_buddies__search {
+            background-color: #fff;
+            border: 2px solid #46CE46 !important; 
+            border-radius: 1px;
+            padding: 38px 33px 27px 35px;
+            position: relative;
+            margin-top: 41px;
+            margin-bottom: 76px;
+        }
+
+        .car_buddies__search label {
+            width: 100%;
+        }
+
+        .car_buddies__search span {
+            color: #46CE46 !important; 
+            display: block;
+            font-size: 24px;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            font-family: sans-serif !important;
+        }
+
+        .car_buddies__search input, .car_buddies__search select {
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            color: #000;
+            font: initial;
+            font-size: 14px;
+            height: 35px;
+            line-height: 35px;
+            margin: 0;
+            outline: none;
+            transition: border 170ms ease-in-out;
+            width: 100%;
+            font-family: sans-serif !important;
+        }
+
+        /* IMAGE */
+        @media only screen and (max-width: 768px){
+        .car_buddies__header_img {
+            height: 46em !important;
+        }
+}
+    /* Such BUTTON */
+
+        .btn_search {
+            background-color: #46CE46;
+            color: white;
+            transition: background 170ms ease-in-out;
+            margin-top: 30px;
+            margin-bottom: 9px;
+        }
+
+        .btn_search:hover {
+            background-color:black;
+            color: white !important;
+        }   
+
+
+
+
+
+/* CARTS - Suchergebnisse */
+
+
+    /* TITLE */
+    .car_buddies_search_result_title h1 {
+        font-family: sans-serif;
+        font-size: 49px;
+        margin-bottom: 22px;
+        margin-top: 19px;
+        word-break: break-word;
+    }
+
+     @media only screen and (max-width: 500px){
+        .car_buddies_search_result_title h1 {
+            font-size: 40px;  
+            }
+     }  
+
+
+    /* KARTE */
+    .car_buddies_search_result_carts {
+        border: 1px solid #C8C8C8;
+        color: #969696;
+        padding: 20px;
+        border-left: 11px solid #46CE46 !important; 
+        margin-top: 32px;
+    }
+
+    /* BUTTONS */
+
+        .btn_booking {
+            background-color: #46CE46;
+            color: white;
+            transition: background 170ms ease-in-out;
+            margin-top: 30px;
+            margin-bottom: 9px;
+        }
+
+        .btn_booking:hover {
+            background-color:black;
+            color: white !important;
+        } 
+
+
+        .btn_notice {
+            background-color: #46CE46;
+            color: white;
+            transition: background 170ms ease-in-out;
+            margin-top: 30px;
+            margin-bottom: 9px;
+        }
+
+        .btn_notice:hover {
+            background-color:black;
+            color: white !important;
+        } 
+
+
+

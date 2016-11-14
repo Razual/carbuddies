@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diese Webapp..">
+    <meta name="author" content="">
+    <title>Car Buddies</title>
+
+<!-- CSS DATEIEN -->
+    <!-- Bootstrap Core CSS muss in jede html-Datei -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS muss in jede html-Datei  -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+    <!-- HEADER / FOOTER und MENU CSS - muss in jede html-Datei -->
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    
+    <!-- Account CSS -->
+    <link href="../css/account.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+<!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="../js/clean-blog.min.js"></script> 
+    
+    
+<!-- Include Required Prerequisites -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+ 
+</head>
+
+    
+<body>
+
+    <!-- MENÜ / Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <!-- Responsive Design Menü Navi -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <!-- CAR BUDDIES Section-->
+                <div class="car_buddies__logo_section">
+                    <!-- Logo -->
+                    <div class="col-lg-4 col-xs-12">
+                        <img src="../img/cb_logo.png"/> 
+                    </div>
+                    <!-- Schrift  -->
+                    <div class="col-lg-8 col-xs-12">
+                        <span>
+                            <a class="navbar-brand" href="home.html">Car Buddies</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--  Menü Punkte -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav car_buddies__navbar">
+                    <li class="border_left">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="account.html">Konto</a>
+                    </li>
+                    <li>
+                        <a href="my_rides.html">Meine Fahrten</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html">Buchungen</a>
+                    </li>
+                    <li>
+                        <a href="archiv.html">Archiv</a>
+                    </li>
+                    <!-- Ausloggen Funktion -->
+                    <li>
+                        <a href="login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+    
+<!-- HEADER --> 
+    <header class="intro-header car_buddies__header_img" id="car_buddies__search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car_buddies__search_section_title">
+                    <div class="site-heading col-lg-10 col-xs-12 col-lg-offset-2 car_buddies__search_title">
+                        <h1>Benutzerkonto</h1>
+                    </div>
+                    <div class="title_border col-lg-5 col-xs-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+<!-- Main Content -->
+    <section id="useraccount" class="useraccount">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-lg-offset-1 car_buddies__useraccount">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="useraccount_title col-lg-12 col-xs-12">
+                            <h1>Mein Konto</h1>
+                        </div>
+                        <div class="useraccount_body col-lg-12 col-xs-12">
+                            <!-- Nach Klick öffnet sich rechts ein Fenster mit, wo man die Kontaktinformationen bearbeiten kann. -->
+                            <p>
+                                <a href="#edit_contactinformation">
+                                    Kontaktinformationen bearbeiten
+                                </a>
+                            </p>
+                            <p>
+                                <a href="wishlist.html">
+                                    Merkliste
+                                </a>
+                            </p>
+                            <p>
+                                <a>
+                                    Neue Buchungsanfragen
+                                </a>
+                            </p>
+                            <p>
+                                <a>
+                                    Meine gebuchten Fahrten
+                                </a>
+                            </p>
+                            <p>
+                                <a href="login.html">
+                                    Logout
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Rechte Seite  -->
+                    
+                    <!-- Kontaktinformationen bearbeiten  -->
+                    <div  class="col-lg-6 col-xs-12">
+                        <div class="col-lg-12 col-xs-12 user_contactinformation_cart" id="edit_contactinformation">
+                            <div class="col-lg-7 col-xs-12 user_contactinformation_title">
+                                <h1>Kontaktinformationen bearbeiten</h1>
+                            </div>
+                            <!-- Hier werden die Daten aus der DB stehen -->
+                            <div class="col-lg-12 col-xs-12 user_contactinformation_body">
+                                <!-- Vorname -->
+                                <div class="col-lg-6 form-group">
+                                    <label for="firstname">Vorname</label>
+                                    <input type="firstname" class="form-control" id="firstname">
+                                </div>
+                                <!-- Nachname -->
+                                <div class="col-lg-6 form-group">
+                                    <label for="lastname">Nachname</label>
+                                    <input type="lastname" class="form-control" id="lastname">
+                                </div>
+                                <!-- Email Adresse -->
+                                <div class="col-lg-12 form-group">
+                                    <label for="email_adress">Email-Adresse</label>
+                                    <input type="email" class="form-control" id="email_adress">
+                                </div>
+                                <!-- Passwort  -->
+                                <div class="col-lg-12 form-group">
+                                    <label for="password">Passwort</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <!-- PW wiederholen  -->
+                                <div class="col-lg-6 form-group">
+                                    <label for="new_password">Neues Passwort</label>
+                                    <input type="new_password" class="form-control" id="new_password">
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <label for="new_password">Neues Passwort</label>
+                                    <input type="new_password" class="form-control" id="new_password">
+                                </div>
+                            </div>
+                            <!-- BUTTONS ========================================================= -->
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                                <!-- Felder können bearebitet werden -->
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="btn_contactinformation">
+                                    <a class="btn btn_contactinformation">Bearbeiten</a>
+                                </div>
+                                <!-- DIESE Buttons sollen erst angezeigt werden, wenn auf bearbeiten geklickt wurde. -->
+                                <!-- Fertig, Daten werden in DB gespeichert. -->
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="btn_save">
+                                    <a class="btn btn_save">Speichern</a>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="btn_cancel">
+                                    <a class="btn btn_cancel">Abbrechen</a>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- NEUE Buchungsanfragen  -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new_booking_requets">
+                            <div class="new_booking_requets_title">
+                                <h1>Ihre neuen Buchungsanfragen</h1>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_booking_requets">
+                                <!--  -->
+                                <div class="col-lg-7 col-sm-7 col-xs-12">
+                                    <h2 id="username">Username -DB</h2>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 col-xs-12 mt44">
+                                    <h4 id="available_seats">Verfügbare Sitzplätze: -DB</h4>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <h3 id="from_toward">Von  -  Nach -DB</h3>
+                                    <h3 id="date">Datum -DB</h3>
+                                    <h3 id="time">Uhrzeit -DB</h3>
+                                </div>
+                                <!-- BUTTONS =========== -->
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car__btn_section">
+                                    <!-- ANMELDEN -->
+                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-right" id="btn_accept">
+                                        <a class="btn btn_accept" href="Verlinkung zur Stratseite, wenn anmelde Daten stimmen">Akzeptieren</a>
+                                    </div>
+                                    <!-- NEUES KONTO  -->
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-right" id="btn_reject">
+                                        <a class="btn btn_reject" href="Verlinkung zum New Account Formular">Ablehnen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+
+
+    
+    
+    <!-- Footer ========================================================================================================================= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Footer kommt später
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+-->
+                    <p class="copyright text-muted">Copyright &copy; Car Buddies 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

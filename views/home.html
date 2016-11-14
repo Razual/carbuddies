@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diese Webapp..">
+    <meta name="author" content="">
+    <title>Car Buddies</title>
+
+<!-- CSS DATEIEN -->
+    <!-- Bootstrap Core CSS muss in jede html-Datei -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS muss in jede html-Datei  -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+    <!-- HEADER / FOOTER und MENU CSS - muss in jede html-Datei -->
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    
+    <!-- Home CSS -->
+    <link href="../css/home.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+<!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="../js/clean-blog.min.js"></script> 
+    
+    
+<!-- Include Required Prerequisites -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+ 
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+<script type="text/javascript">
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            locale: {
+                format: 'MM/DD/YYYY h:mm A'
+            }
+        });
+    });
+</script>
+</head>
+
+    
+<body>
+
+    <!-- MENÜ / Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <!-- Responsive Design Menü Navi -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <!-- CAR BUDDIES Section-->
+                <div class="car_buddies__logo_section">
+                    <!-- Logo -->
+                    <div class="col-lg-4 col-xs-12">
+                        <img src="../img/cb_logo.png"/> 
+                    </div>
+                    <!-- Schrift  -->
+                    <div class="col-lg-8 col-xs-12">
+                        <span>
+                            <a class="navbar-brand" href="home.html">Car Buddies</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--  Menü Punkte -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav car_buddies__navbar">
+                    <li class="border_left">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="account.html">Konto</a>
+                    </li>
+                    <li>
+                        <a href="my_rides.html">Meine Fahrten</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html">Buchungen</a>
+                    </li>
+                    <li>
+                        <a href="archiv.html">Archiv</a>
+                    </li>
+                    <!-- Ausloggen Funktion -->
+                    <li>
+                        <a href="login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+    
+    <!-- HEADER --> 
+    <header class="intro-header car_buddies__header_img" id="car_buddies__search">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car_buddies__search_section_title">
+                        <div class="site-heading col-lg-10 col-xs-12 col-lg-offset-1 car_buddies__search_title">
+                            <h1>Suchen Sie Ihre Fahrt </h1>
+                        </div>
+                        <div class="title_border  col-lg-5 col-xs-12"></div>
+                    </div>
+                    <div class="car_buddies__search col-lg-offset-2 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <div class="col-lg-4 col-xs-12">
+                            <label>
+                                <span>VON</span>
+                                <input type="text" class="form-control" id="search_from" placeholder="z.B. Köln">
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <label>
+                                <span>Nach</span>
+                                <input type="text" class="form-control" id="search_toward" placeholder="z.B. Bonn">
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <label>
+                                <span>Zeitraum</span>
+                                <input type="text" name="daterange" id="search_daterange" placeholder="Zeitraum wählen" />
+                            </label>
+                        </div>
+                        <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
+                            <a class="btn btn_search" href="Nach Klick tauchen Suchergebnisse auf">Suchen</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <!-- Main Content -->
+    <section id="car_buddies__search_result" class="car_buddies__search_result">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Title, soll aber erst auftauchen, wenn auf bei der suche gesucht wurden ist :D Logisch -->
+                <div class="col-lg-10 col-xs-12 col-lg-offset-1 car_buddies_search_result_title" id="car_buddies_search_result_title">
+                    <h1>Suchergebnisse</h1>
+                </div>
+                
+                
+                <!-- Dieser ganze Block ist eine Fahrten-Karte und soll sich bei mehreren Suchergebnissen wiederholen -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="car_buddies_search_result_carts">
+                    <div class="col-lg-offset-2 col-lg-5 col-md-5 col-sm-12 col-xs-12 car_buddies_search_result_carts">
+                        <div class="col-lg-7 col-sm-7 col-xs-12">
+                            <h2 id="username">Username -DB</h2>
+                        </div>
+                        <div class="col-lg-5 col-sm-5 col-xs-12 mt44">
+                            <h4 id="available_seats">Verfügbare Sitzplätze: -DB</h4>
+                        </div>
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <h3 id="from_toward">Von  -  Nach -DB</h3>
+                            <h3 id="date">Datum -DB</h3>
+                            <h3 id="time">Uhrzeit -DB</h3>
+                        </div>
+                        <!-- BUTTONS ===========-->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car__btn_section">
+                            <!-- ANMELDEN -->
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-right" id="btn_booking">
+                                <a class="btn btn_booking" href="Verlinkung zur Stratseite, wenn anmelde Daten stimmen">Buchen</a>
+                            </div>
+                            <!-- NEUES KONTO  -->
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-right" id="btn_notice">
+                                <a class="btn btn_notice" href="Verlinkung zum New Account Formular">Merken</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENDE -->
+                
+                
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+
+
+    
+    
+    <!-- Footer ========================================================================================================================= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Footer kommt später
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+-->
+                    <p class="copyright text-muted">Copyright &copy; Car Buddies 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

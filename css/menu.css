@@ -1,0 +1,62 @@
+/* CSS Datei für das Menü / die Navigation */
+
+/* Car Buddies Logo Section */
+
+    .car_buddies__logo_section img {
+        width: 100px;
+    }
+
+    .car_buddies__logo_section .navbar-brand {
+        font-weight: 300;
+        transition: background 170ms ease-in-out;
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+
+    .car_buddies__logo_section .navbar-brand:hover {
+        color: rgb(70, 206, 70);
+    }
+
+
+
+
+/* Menü  */
+
+    .car_buddies__navbar {
+        height: 3em; 
+        float: right;
+        margin-top: 5px;
+        margin-right: 40px;
+    }
+
+    .car_buddies__navbar li {
+        border-right: 1px solid white;
+        height: 28px;
+        margin-top: 16px;
+        transition: background 170ms ease-in-out;
+    }
+
+    .car_buddies__navbar li:hover {
+        background: rgba(70, 206, 70, 0.5);
+    }
+
+    .border_left {
+        border-left: 1px solid white;
+    }
+
+    .car_buddies__navbar li a {
+        font-size: 17px !important;
+        font-family: sans-serif;
+        font-weight: 300 !important;
+        padding-top: 4px!important;
+        padding-right: 44px !important;
+        padding-left: 44px !important;
+    }
+
+
+/* Responssive MENÜ  */
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    height: 12em;
+    
+}

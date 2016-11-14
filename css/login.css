@@ -1,0 +1,90 @@
+/* Login Fenster */
+    .car__login_window {
+        border: 1px solid lightgray;
+        padding: 32px;
+        font-family: sans-serif !important;
+        margin-top: 30px;
+    }
+
+
+.car__login_window h3 {
+    color: #46CE46;
+    font-weight: 300;
+    margin-bottom: 27px;
+    margin-top: 0;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+}
+
+
+.error_text {
+    color: #FF5757;
+    display: none;
+}
+
+.forgot_password {
+    font-size: 14px;
+    transition: background 170ms ease-in-out;
+}
+
+.forgot_password:hover {
+    color: #46CE46;
+}
+
+/* BUTTOn Section */
+    .car__btn_section {
+        padding: 0;
+    }
+
+
+/* BUTTONS */
+
+    /* Anmelden */
+    .btn_sign_in {
+        background: black;
+        color: white;
+        transition: background 170ms ease-in-out;
+        margin-top: 30px;
+        margin-bottom: 9px;
+    }
+
+    .btn_sign_in:hover {
+        background-color: #46CE46;
+        color: white;
+    }
+
+    /* BTN Neues Konto -  */
+
+@media only screen and (min-width: 1200px) {
+.btn_new_account_col {
+    text-align: right;
+}
+}
+
+    .btn_new_account {
+        background: black;
+        color: white;
+        transition: background 170ms ease-in-out;
+        margin-top: 30px;
+        margin-bottom: 9px;
+    }
+
+    .btn_new_account:hover {
+        background-color: #46CE46;
+        color: white;
+    }
+
+
+    /* BTN Neues Konto anlegen  */
+    .btn_create_new_account {
+        background: black;
+        color: white;
+        transition: background 170ms ease-in-out;
+        margin-top: 32px;
+        margin-bottom: 18px;
+    }
+
+    .btn_create_new_account:hover {
+        background-color: #46CE46;
+        color: white;
+    }

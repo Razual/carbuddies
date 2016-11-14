@@ -1,0 +1,156 @@
+/* CSS Datei für das Benutzerkonto */
+
+/* Useraccount BLOCK */
+
+    .useraccount_title {
+        background: #f5f5f5; 
+        color: #717271;
+        border-bottom: 3px solid #717271;
+    }
+
+    .useraccount_title h1 {
+        font-size: 24px; 
+        margin-left: 15px; 
+        padding-bottom: 4px;
+    }
+
+    .useraccount_body {
+        background: #f5f5f5; 
+        color: #717271;
+        margin-bottom: 33px;
+    }
+
+    .useraccount_body p {
+        margin-left: 15px; 
+    }
+
+    .useraccount_body a {
+        text-decoration: none!important; 
+        color: #717271;
+        transition: color 170ms ease-in-out;
+    }
+
+    .useraccount_body a:hover {
+        color: #46CE46;
+    }
+
+
+/* Kontaktinformationen  */
+
+    .user_contactinformation_cart {
+        border: 1px solid lightgray;
+        border-bottom: 5px solid lightgray; 
+        border-left: 5px solid lightgray; 
+    }
+
+
+    .user_contactinformation_title h1 {
+        font-size: 24px; 
+        margin-left: 15px;
+        padding-bottom: 13px;
+        border-bottom: 3px solid #46CE46;
+        margin-bottom: 40px;
+    }
+
+
+    /* Bearbeiten Button */
+
+    .btn_contactinformation {
+        background: black;
+        color: white;
+        transition: background 170ms ease-in-out;
+        margin-top: 30px;
+        margin-bottom: 34px;
+    }
+
+    .btn_contactinformation:hover {
+        background-color: #46CE46;
+        color: white;
+    }
+
+
+    /* Speichern BTN */
+    .btn_save {
+        background: black;
+        color: white;
+        transition: background 170ms ease-in-out;
+        margin-top: 30px;
+        margin-bottom: 34px;
+    }
+
+    .btn_save:hover {
+        background-color: #46CE46;
+        color: white;
+    }
+
+
+    /* Abbrechen BTN  */
+    .btn_cancel {
+        background: black;
+        color: white;
+        transition: background 170ms ease-in-out;
+        margin-top: 30px;
+        margin-bottom: 34px;
+    }
+
+    .btn_cancel:hover {
+        background-color: #46CE46;
+        color: white;
+    }
+
+
+
+
+    /* TITLE */
+    .new_booking_requets h1 {
+        font-family: sans-serif;
+        font-size: 49px;
+        margin-bottom: 22px;
+        margin-top: 19px;
+        word-break: break-word;
+    }
+
+     @media only screen and (max-width: 500px){
+        .new_booking_requets h1 {
+            font-size: 40px;  
+            }
+     }  
+
+
+    /* KARTE */
+    .new_booking_requets {
+        border: 1px solid #C8C8C8;
+        color: #969696;
+        padding: 20px;
+        border-left: 11px solid #46CE46 !important; 
+        margin-top: 32px;
+    }
+
+    /* BUTTONS */
+
+        .btn_booking {
+            background-color: #46CE46;
+            color: white;
+            transition: background 170ms ease-in-out;
+            margin-top: 30px;
+            margin-bottom: 9px;
+        }
+
+        .btn_booking:hover {
+            background-color:black;
+            color: white !important;
+        } 
+
+
+        .btn_notice {
+            background-color: #46CE46;
+            color: white;
+            transition: background 170ms ease-in-out;
+            margin-top: 30px;
+            margin-bottom: 9px;
+        }
+
+        .btn_notice:hover {
+            background-color:black;
+            color: white !important;
+        } 
