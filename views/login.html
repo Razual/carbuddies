@@ -50,7 +50,10 @@
     <script src="../js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="../js/clean-blog.min.js"></script> 
+    <script src="../js/clean-blog.min.js"></script>
+
+    <!-- Utilities for Login -->
+    <script src="../js/login.js"></script> 
     
 </head>
 
@@ -152,27 +155,27 @@
                         <!-- Vorname -->
                         <div class="col-lg-6 form-group">
                             <label for="firstname">Vorname</label>
-                            <input type="firstname" class="form-control" id="firstname" placeholder="Vorname eingeben ">
+                            <input type="text" class="form-control" name="new_acc_firstname" id="new_acc_firstname" placeholder="Vorname eingeben ">
                         </div>
                         <!-- Nachname -->
                         <div class="col-lg-6 form-group">
                             <label for="lastname">Nachname</label>
-                            <input type="lastname" class="form-control" id="lastname" placeholder="Nachname eingeben">
+                            <input type="text" class="form-control" name="new_acc_lastname" id="new_acc_lastname" placeholder="Nachname eingeben">
                         </div>
                         <!-- Email Adresse -->
                         <div class="col-lg-12 form-group">
                             <label for="email_adress">Email-Adresse</label>
-                            <input type="email" class="form-control" id="email_adress" placeholder="Email-Adresse eingeben">
+                            <input type="text" class="form-control" name="new_acc_email" id="new_acc_email" placeholder="Email-Adresse eingeben">
                         </div>
                         <!-- Passwort  -->
                         <div class="col-lg-6 form-group">
                             <label for="password">Passwort</label>
-                            <input type="password" class="form-control" id="password" placeholder="Passwort eingeben">
+                            <input type="password" class="form-control" name="new_acc_password" id="new_acc_password" placeholder="Passwort eingeben">
                         </div>
                         <!-- PW wiederholen  -->
                         <div class="col-lg-6 form-group">
                             <label for="repeat_password">Passwort Wiederholen</label>
-                            <input type="repeat_password" class="form-control" id="repeat_password" placeholder="Passwort wiederholen">
+                            <input type="password" class="form-control" name="new_acc_repeat_password" id="new_acc_repeat_password" placeholder="Passwort wiederholen">
                         </div>
                         
                         
@@ -180,7 +183,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car__btn_section">
                             <!-- Fertig, Daten werden in DB gespeichert. Man kommt jetzt auf das LOGIN-Fenster zurück und kann sich anmelden -->
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="btn_create_new_account">
-                                <a class="btn btn_create_new_account" href="Verlinkung zum Login Fenster">Neues Konto erstellen</a>
+                                <a class="btn btn_create_new_account" href="#" onclick="createNewAccount()">Neues Konto erstellen</a>
                             </div>
                         </div>
                     </div>
