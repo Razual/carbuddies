@@ -78,16 +78,10 @@
                         <a href="home.html">Home</a>
                     </li>
                     <li>
-                        <a href="account.html">Konto</a>
+                        <a href="account.html">Dein Konto</a>
                     </li>
                     <li>
-                        <a href="my_rides.html">Meine Fahrten</a>
-                    </li>
-                    <li>
-                        <a href="bookings.html">Buchungen</a>
-                    </li>
-                    <li>
-                        <a href="archiv.html">Archiv</a>
+                        <a href="wishlist.html">Merkliste</a>
                     </li>
                     <!-- Ausloggen Funktion -->
                     <li>
@@ -99,8 +93,6 @@
     </nav>
     
     
-
-
     
 <!-- HEADER --> 
     <header class="intro-header car_buddies__header_img" id="car_buddies__search">
@@ -152,6 +144,11 @@
                                 </a>
                             </p>
                             <p>
+                                <a>
+                                    Archiv
+                                </a>
+                            </p>
+                            <p>
                                 <a href="login.html">
                                     Logout
                                 </a>
@@ -162,7 +159,7 @@
                     <!-- Rechte Seite  -->
                     
                     <!-- Kontaktinformationen bearbeiten  -->
-                    <div  class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-xs-12">
                         <div class="col-lg-12 col-xs-12 user_contactinformation_cart" id="edit_contactinformation">
                             <div class="col-lg-7 col-xs-12 user_contactinformation_title">
                                 <h1>Kontaktinformationen bearbeiten</h1>
@@ -207,7 +204,7 @@
                                 </div>
                                 <!-- DIESE Buttons sollen erst angezeigt werden, wenn auf bearbeiten geklickt wurde. -->
                                 <!-- Fertig, Daten werden in DB gespeichert. -->
-                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="btn_save">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="btn_save">
                                     <a class="btn btn_save">Speichern</a>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="btn_cancel">
@@ -234,7 +231,7 @@
                                 <!-- BUTTONS =========== -->
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 car__btn_section">
                                     <!-- ANMELDEN -->
-                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-right" id="btn_accept">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-right" id="btn_accept">
                                         <a class="btn btn_accept">Akzeptieren</a>
                                     </div>
                                     <!-- NEUES KONTO  -->
@@ -262,6 +259,25 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        <!-- Meine Fahrten  -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="my_archiv">
+                            <div class="my_booking_rides_title">
+                                <h1>Archiv</h1>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my_archiv">
+                                <!--  -->
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <h2 id="username">Username -DB </h2>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <h4 id="from_toward">Von  -  Nach -DB</h4>
+                                    <h4 id="date">Datum -DB</h4>
+                                    <h4 id="time">Uhrzeit -DB</h4>
+                                </div>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
